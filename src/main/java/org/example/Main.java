@@ -10,8 +10,9 @@ public class Main {
     public static void main(String[] args) {
         String pattern = "gray|grey";
         String testString = "there is a grey fox in the gray building";
+        int flags = Pattern.CASE_INSENSITIVE | Pattern.MULTILINE;
 
-        Pattern compiledPattern = Pattern.compile(pattern);
+        Pattern compiledPattern = Pattern.compile(pattern, flags);
         Matcher matcher = compiledPattern.matcher(testString);
 
         JSONArray matchesArray = new JSONArray();
