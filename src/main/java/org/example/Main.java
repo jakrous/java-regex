@@ -34,7 +34,7 @@ public class Main {
 
         JSONObject matchesObject = new JSONObject();
         matchesObject.put("pattern", pattern);
-        matchesObject.put("test", testString);
+        matchesObject.put("testString", testString);
         matchesObject.put("matchesFound", matchesFound);
         matchesObject.put("matches", matchesArray);
 
